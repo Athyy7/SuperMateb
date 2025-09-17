@@ -108,18 +108,24 @@ The easiest way to get started is to visit the live application:
 ---
 
 ### 📁 File Structure
-
-├── app.py              # Main Streamlit application
-├── agents.py           # AI agent implementations
-├── arbiter.py          # Agent output merger and decision engine
-├── indexer.py          # Vector indexing for RAG (FAISS/Pinecone)
-├── planner.py          # Monte Carlo simulation utilities
-├── rag.py              # RAG implementation with Gemini AI
-├── utils.py            # Data loading and processing utilities
-├── requirements.txt    # Python dependencies
-├── .env.example        # Example environment variables file
-└── README.md           # This file
-
+```
+supermate/
+├── .gitignore          # Specifies files and folders for Git to ignore
+├── app.py              # 🚀 Main entry point for the Streamlit application
+├── agents.py           # 🧠 Core logic for all AI agents (Behavior, Fraud, Portfolio)
+├── arbiter.py          # ⚖️ Decision engine to merge and prioritize outputs from agents
+├── indexer.py          # 🗂️ Handles vector indexing and searching (FAISS/Pinecone)
+├── planner.py          # 📈 Monte Carlo simulation and financial planning utilities
+├── rag.py              # 💬 RAG implementation connecting Gemini to the vector store
+├── utils.py            # 🛠️ Helper functions for data loading, cleaning, etc.
+├── requirements.txt    # 📦 List of Python dependencies for the project
+├── .env.example        # 📝 Template for environment variables
+├── README.md           # 📄 You are here!
+├── LICENSE             # 📜 Project license file (e.g., MIT)
+└── data/
+    └── sample_transactions.csv   # Example transaction data for new users
+    └── sample_price_history.csv  # Example price history data for simulations
+```
 
 *(Note: I added `.env.example` which is a good practice)*
 
